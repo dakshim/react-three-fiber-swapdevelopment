@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/react-three-fiber-swapdevelopment/static/css/main.d5443cfd.css",
+    "main.js": "/react-three-fiber-swapdevelopment/static/js/main.c3af696b.js",
+    "static/js/787.f103fa53.chunk.js": "/react-three-fiber-swapdevelopment/static/js/787.f103fa53.chunk.js",
+    "static/media/crop-6.jpg": "/react-three-fiber-swapdevelopment/static/media/crop-6.29c206e8212e21fc59fb.jpg",
+    "static/media/crop-3.jpg": "/react-three-fiber-swapdevelopment/static/media/crop-3.c23d3493beae584e0f32.jpg",
+    "static/media/crop-4.jpg": "/react-three-fiber-swapdevelopment/static/media/crop-4.c6c6b84599e30f207a44.jpg",
+    "static/media/crop-8.jpg": "/react-three-fiber-swapdevelopment/static/media/crop-8.c1b86dd0f1c45ee9b5e2.jpg",
+    "static/media/crop-13.jpg": "/react-three-fiber-swapdevelopment/static/media/crop-13.fc66b93a08f80c2b647d.jpg",
+    "static/media/crop-1.jpg": "/react-three-fiber-swapdevelopment/static/media/crop-1.691d5954a59992cac4d6.jpg",
+    "static/media/crop-11.jpg": "/react-three-fiber-swapdevelopment/static/media/crop-11.136bcadce4b6c6545fda.jpg",
+    "static/media/crop-7.jpg": "/react-three-fiber-swapdevelopment/static/media/crop-7.394dbb6c3e5d4c869d70.jpg",
+    "static/media/crop-5.jpg": "/react-three-fiber-swapdevelopment/static/media/crop-5.fc5645555f7d675d72ae.jpg",
+    "static/media/crop-14.jpg": "/react-three-fiber-swapdevelopment/static/media/crop-14.43efed97d189d40faa38.jpg",
+    "static/media/crop-2.jpg": "/react-three-fiber-swapdevelopment/static/media/crop-2.4aa0e43192a6aad10bd7.jpg",
+    "static/media/crop-10.jpg": "/react-three-fiber-swapdevelopment/static/media/crop-10.3ee0be720844f0306dce.jpg",
+    "static/media/crop-12.jpg": "/react-three-fiber-swapdevelopment/static/media/crop-12.4c6731272ccc50cbca68.jpg",
+    "static/media/crop-9.jpg": "/react-three-fiber-swapdevelopment/static/media/crop-9.98ee55b1c5b6e981e317.jpg",
+    "index.html": "/react-three-fiber-swapdevelopment/index.html",
+    "main.d5443cfd.css.map": "/react-three-fiber-swapdevelopment/static/css/main.d5443cfd.css.map",
+    "main.c3af696b.js.map": "/react-three-fiber-swapdevelopment/static/js/main.c3af696b.js.map",
+    "787.f103fa53.chunk.js.map": "/react-three-fiber-swapdevelopment/static/js/787.f103fa53.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d5443cfd.css",
+    "static/js/main.c3af696b.js"
+  ]
+}
