@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-three-fiber-swapdevelopment/static/css/main.d5443cfd.css",
-    "main.js": "/react-three-fiber-swapdevelopment/static/js/main.c3af696b.js",
+    "main.js": "/react-three-fiber-swapdevelopment/static/js/main.0bfe2bbb.js",
     "static/js/787.f103fa53.chunk.js": "/react-three-fiber-swapdevelopment/static/js/787.f103fa53.chunk.js",
     "static/media/crop-6.jpg": "/react-three-fiber-swapdevelopment/static/media/crop-6.29c206e8212e21fc59fb.jpg",
     "static/media/crop-3.jpg": "/react-three-fiber-swapdevelopment/static/media/crop-3.c23d3493beae584e0f32.jpg",
@@ -19,11 +19,11 @@
     "static/media/crop-9.jpg": "/react-three-fiber-swapdevelopment/static/media/crop-9.98ee55b1c5b6e981e317.jpg",
     "index.html": "/react-three-fiber-swapdevelopment/index.html",
     "main.d5443cfd.css.map": "/react-three-fiber-swapdevelopment/static/css/main.d5443cfd.css.map",
-    "main.c3af696b.js.map": "/react-three-fiber-swapdevelopment/static/js/main.c3af696b.js.map",
+    "main.0bfe2bbb.js.map": "/react-three-fiber-swapdevelopment/static/js/main.0bfe2bbb.js.map",
     "787.f103fa53.chunk.js.map": "/react-three-fiber-swapdevelopment/static/js/787.f103fa53.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d5443cfd.css",
-    "static/js/main.c3af696b.js"
+    "static/js/main.0bfe2bbb.js"
   ]
 }
