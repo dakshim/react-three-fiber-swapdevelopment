@@ -12,5 +12,5 @@ The project uses following packages:
 * [React](https://reactjs.org/)
 * [React Spring](https://react-spring.io/)
    
- and is forked/inspired/based on project by [Paul Henschel] (https://codesandbox.io/u/drcmda) at [Codesandbox](https://codesandbox.io/s/y3j31r13zz)
+ and is forked/inspired/based on project by [Paul Henschel](https://codesandbox.io/u/drcmda) at [Codesandbox](https://codesandbox.io/s/y3j31r13zz)
 
