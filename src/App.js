@@ -13,12 +13,13 @@ import Ripple from './Ripple';
 import { EffectComposer } from './postprocessing/EffectComposer';
 import { RenderPass } from './postprocessing/RenderPass';
 import { GlitchPass } from './postprocessing/GlitchPass';
+import swapLogo from './images/swap_logo.png'
 applySpring({ EffectComposer, RenderPass, GlitchPass });
 applyThree({ EffectComposer, RenderPass, GlitchPass });
 
 
 /** This component loads an image and projects it onto a plane */
-function Image({ url, opacity, scale, ...props }) {
+function GalleryImage({ url, opacity, scale, ...props }) {
   const texture = useMemo(() => new THREE.TextureLoader().load(url), [url])
   const [hovered, setHover] = useState(false)
   const hover = useCallback(() => setHover(true), [])
@@ -26,6 +27,23 @@ function Image({ url, opacity, scale, ...props }) {
   const { factor } = useSpring({ factor: hovered ? 1.1 : 1 })
   return (
     <a.mesh {...props} onHover={hover} onUnhover={unhover} scale={factor.interpolate(f => [scale * f, scale * f, 1])}>
+      <planeBufferGeometry attach="geometry" args={[5, 5]} />
+      <a.meshLambertMaterial attach="material" transparent opacity={opacity}>
+        <primitive attach="map" object={texture} />
+      </a.meshLambertMaterial>
+    </a.mesh>
+  )
+}
+
+/** This component loads an image and projects it onto a plane */
+function Image({ url, opacity, scaleX, scaleY = scaleX, ...props }) {
+  const texture = useMemo(() => new THREE.TextureLoader().load(url), [url])
+  const [hovered, setHover] = useState(false)
+  const hover = useCallback(() => setHover(true), [])
+  const unhover = useCallback(() => setHover(false), [])
+  const { factor } = useSpring({ factor: hovered ? 1.1 : 1 })
+  return (
+    <a.mesh {...props} onHover={hover} onUnhover={unhover} scale={factor.interpolate(f => [scaleX * f, scaleY * f, 1])}>
       <planeBufferGeometry attach="geometry" args={[5, 5]} />
       <a.meshLambertMaterial attach="material" transparent opacity={opacity}>
         <primitive attach="map" object={texture} />
@@ -119,7 +137,7 @@ const Effects = React.memo(({ factor }) => {
 /** This component creates a bunch of parallaxed images */
 function Images({ top, mouse, scrollMax }) {
   return data.map(([url, x, y, factor, z, scale], index) => (
-    <Image
+    <GalleryImage
       key={index}
       url={url}
       scale={scale}
@@ -179,9 +197,17 @@ function Scene({ top, mouse }) {
       <Text position={top.interpolate(top => [0, -24 + ((top * 10) / scrollMax) * 2, 0])} color="white" fontSize={120}>
          Get Right Solutions
       </Text>
-      <Text position={top.interpolate(top => [0, -30 + ((top * 10) / scrollMax) * 2, 0])} color="black" fontSize={120}>
-         Only at #br# Swap Development
+      <Text position={top.interpolate(top => [-2, -29.9 + ((top * 10) / scrollMax) * 2, 0])} color="black" fontSize={70}>
+         only at
       </Text>
+      <Image
+        key={45}
+        url={swapLogo}
+        scaleX={1}
+        scaleY={0.33}
+        opacity={1}
+        position={top.interpolate(top => [1, -30 + ((top * 10) / scrollMax) * 2, 0])}
+      />
       <Box position={top.interpolate(top => [-6, -29.5 + ((top * 10) / scrollMax) * 2, 0])} color="#2EB638"/>
       <Box position={top.interpolate(top => [5, -27.5 + ((top * 10) / scrollMax) * 2, 0])} color="#27282F" />
 
