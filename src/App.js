@@ -174,12 +174,12 @@ function Scene({ top, mouse }) {
       <Stars position={top.interpolate(top => [0, -1 + top / 20, 0])} />
       <Images top={top} mouse={mouse} scrollMax={scrollMax} />
       <Text opacity={top.interpolate([0, 200], [1, 0])} position={top.interpolate(top => [0, -1 + top / 200, 0])} fontSize={200}>
-        Website Bugs #br# & Glitches
+        Website Bugs #br# & Glitches?
       </Text>
-      <Text position={top.interpolate(top => [0, -24 + ((top * 10) / scrollMax) * 2, 0])} color="white" fontSize={150}>
+      <Text position={top.interpolate(top => [0, -24 + ((top * 10) / scrollMax) * 2, 0])} color="white" fontSize={120}>
          Get Right Solutions
       </Text>
-      <Text position={top.interpolate(top => [0, -30 + ((top * 10) / scrollMax) * 2, 0])} color="black" fontSize={150}>
+      <Text position={top.interpolate(top => [0, -30 + ((top * 10) / scrollMax) * 2, 0])} color="black" fontSize={120}>
          Only at #br# Swap Development
       </Text>
       <Box position={top.interpolate(top => [-6, -29.5 + ((top * 10) / scrollMax) * 2, 0])} color="#2EB638"/>
